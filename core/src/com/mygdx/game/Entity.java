@@ -1,5 +1,6 @@
 package com.mygdx.game;
 
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Vector2;
@@ -8,6 +9,10 @@ import static com.mygdx.game.Globals.SCREEN_HEIGHT;
 import static com.mygdx.game.Globals.SCREEN_WIDTH;
 
 public abstract class Entity {
+
+
+    protected Texture _texture;
+
 
     protected Vector2 _pos;
     protected Vector2 _vel;
@@ -18,6 +23,9 @@ public abstract class Entity {
     protected float _maxForce = 0.2f;
 
     public Entity() {
+
+        _texture = new Texture("boid.png");
+
         _pos = new Vector2(200f, 400f);
         _vel = new Vector2(1f, 0);
         _acc = new Vector2(0f, 0f);
