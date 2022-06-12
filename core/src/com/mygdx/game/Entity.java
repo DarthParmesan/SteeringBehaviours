@@ -18,7 +18,7 @@ public abstract class Entity {
     protected Vector2 _vel;
     protected Vector2 _acc;
 
-    protected int r = 8;
+    protected int r = 5;
     protected float _maxSpeed = 2f;
     protected float _maxForce = 0.2f;
 
