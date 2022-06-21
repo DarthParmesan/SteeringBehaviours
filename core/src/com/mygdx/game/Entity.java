@@ -12,7 +12,7 @@ public abstract class Entity {
 
 
     protected Texture _texture;
-
+    protected final Vector2 _size = new Vector2(16, 11);
 
     protected Vector2 _pos;
     protected Vector2 _vel;

@@ -19,13 +19,13 @@ public class Vehicle extends Entity{
 
     @Override
     public void render(ShapeRenderer sr, SpriteBatch sb) {
-        sr.setColor(Color.CYAN);
-        sr.begin(ShapeRenderer.ShapeType.Filled);
-        sr.circle(_pos.x, _pos.y, r);
-        sr.end();
+//        sr.setColor(Color.CYAN);
+//        sr.begin(ShapeRenderer.ShapeType.Filled);
+//        sr.circle(_pos.x, _pos.y, r);
+//        sr.end();
 
-//        sb.begin();
-//        sb.draw(_texture, _pos.x, _pos.y);
-//        sb.end();
+        sb.begin();
+        sb.draw(_texture, _pos.x - (_size.x / 2), _pos.y - (_size.y / 2), _size.x/2, _size.y/2, _size.x, _size.y, 1, 1, _vel.angleDeg(), 0, 0, (int)_size.x, (int)_size.y, false, false);
+        sb.end();
     }
 }
